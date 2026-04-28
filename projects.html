@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Projects | Benjamin Pineda</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Benjamin Pineda</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+
+  <div class="projects-container">
+
+    <!-- Project 1 -->
+    <div class="project-card">
+      <img
+        src="./assets/project-1.jpg"
+        alt="SerenitySpot"
+        class="project-img"
+      />
+
+      <h2>SerenitySpot</h2>
+
+      <p>
+        A calming meditation web application featuring guided sessions,
+        ambient soundscapes, and breathing exercises.
+      </p>
+
+      <p><strong>Tech:</strong> React, Tailwind CSS, Netlify</p>
+
+      <div class="btn-container">
+        <button class="btn btn-color-2"
+          onclick="window.open('https://github.com/benjpineda/serenity-spot')">
+          GitHub
+        </button>
+        <button class="btn btn-color-2"
+          onclick="window.open('https://serenityspot.netlify.app/')">
+          Live Demo
+        </button>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <img
+        src="./assets/project-2.jpg"
+        alt="Lou's Pizza"
+        class="project-img"
+      />
+
+      <h2>Lou's Pizza</h2>
+
+      <p>
+        A restaurant website with online ordering, reservations,
+        and menu management.
+      </p>
+
+      <p><strong>Tech:</strong> WordPress, WooCommerce, PHP</p>
+
+      <div class="btn-container">
+        <button class="btn btn-color-2"
+          onclick="window.open('https://louspizza.shop/menu/')">
+          Visit Website
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>  
+  <footer>
+    <p>Copyright &#169; <span id="current-year"></span> Benjamin Pineda. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    // Auto-update copyright year
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
