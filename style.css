@@ -10,6 +10,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background: #f9fafb;
+  overflow-x: hidden;
 }
 
 /* NAVBAR */
@@ -139,8 +140,8 @@ nav {
 .icon:hover {
   transform: scale(1.1);
 }
-/* EXPERIENCE FIX */
 
+/* EXPERIENCE */
 .experience-container {
   background: white;
   padding: 2rem;
@@ -167,7 +168,7 @@ nav {
 }
 
 .small-icon {
-  height: 30px; /* 🔥 THIS FIXES HUGE ICON */
+  height: 30px;
 }
 
 .experience-item p {
@@ -175,8 +176,7 @@ nav {
   font-size: 0.9rem;
 }
 
-/* PROJECTS FIX */
-
+/* PROJECTS */
 #projects {
   padding: 4rem 8rem;
   text-align: center;
@@ -209,16 +209,11 @@ nav {
   margin-bottom: 1rem;
 }
 
-.project-card h2 {
-  margin-bottom: 0.5rem;
-}
-
 .project-card p {
   color: #555;
-  font-size: 0.95rem;
-  margin-bottom: 0.5rem;
 }
 
+/* CONTACT */
 .contact {
   padding: 80px 0;
 }
@@ -264,4 +259,96 @@ nav {
 
 .info-item i {
   font-size: 22px;
+}
+
+/* =========================
+   RESPONSIVE (SAFE FIX)
+========================= */
+
+/* TABLET */
+@media (max-width: 1024px) {
+  #profile {
+    gap: 3rem;
+    padding: 2rem;
+  }
+
+  nav {
+    padding: 1.5rem 3rem;
+  }
+
+  #projects {
+    padding: 3rem;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    padding: 1.5rem 2rem;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  #profile {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .btn-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-left img {
+    width: 250px;
+  }
+
+  .experience-container {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+
+  .title {
+    font-size: 1.7rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .contact-left img {
+    width: 200px;
+  }
 }
