@@ -195,7 +195,13 @@ nav {
   text-align: center;
 }
 
-.projects-container {
+#certifications {
+  padding: 4rem clamp(1.5rem, 5vw, 8rem);
+  text-align: center;
+}
+
+.projects-container,
+.certifications-container {
   display: flex;
   justify-content: center;
   gap: 2rem;
