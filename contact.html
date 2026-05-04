@@ -48,22 +48,36 @@
 
       <p class="section__text__p2">
         <i class="fab fa-linkedin"></i>
-        <a href="#">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/benjamin-hector-pineda-0367112a0/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </p>
 
       <p class="section__text__p2">
         <i class="fab fa-github"></i>
-        <a href="#">GitHub</a>
+        <a href="https://github.com/benjpineda" target="_blank" rel="noopener noreferrer">GitHub</a>
       </p>
 
       <!-- OPTIONAL BUTTONS (MATCH HOME STYLE) -->
       <div class="btn-container">
-        <button class="btn btn-color-2">Send Message</button>
+        <a class="btn btn-color-2" href="mailto:benjpineda@gmail.com">Send Message</a>
       </div>
 
     </div>
 
   </section>
 
+  <footer>
+    <div class="footer-inner">
+      <p>Connect with me:</p>
+      <div class="footer-links">
+        <a href="https://github.com/benjpineda" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/benjamin-hector-pineda-0367112a0/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+      <p>Copyright © <span id="current-year"></span> Benjamin Pineda. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
